@@ -1,4 +1,4 @@
-# Actuadores
+# ACTUADORES
 
 
 ## 1. PLANTEAMIENTO
