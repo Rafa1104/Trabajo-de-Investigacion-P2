@@ -30,7 +30,7 @@
 
 ## 5. DIAGRAMAS
 - Diagramas de bloques.
-- Diagramas UML. (casos de uso-clase)
+- Diagramas UML...(casos de uso-clase)
 - Diagramas eléctricos.
 - Diagramas esquemáticos.
 
