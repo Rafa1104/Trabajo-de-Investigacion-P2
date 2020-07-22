@@ -18,18 +18,17 @@ Implementar en Thinkercad un programa en Arduino por cada uno de los sensores di
 
 
 ## 4. MARCO TEORIÓCO
-
-### Motor de CC
+### Anillo de 12 Neopixeles
 
 ### Control remoto por IR
 
-### Microservomotor
-
-### Motor de vibración
-
 ### LCD
 
-### Anillo de 12 Neopixeles
+### Micro Servomotor
+
+### Motor de CC
+
+### Motor de vibración
 
 
 ## 5. DIAGRAMAS
