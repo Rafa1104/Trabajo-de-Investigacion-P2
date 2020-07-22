@@ -1,8 +1,5 @@
 # ACTUADORES
 
-
-Implementar en Thinkercad un programa en Arduino por cada uno de los sensores disponibles:
-
 ## 1. PLANTEAMIENTO
 
 
