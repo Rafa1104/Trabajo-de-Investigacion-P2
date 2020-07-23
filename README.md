@@ -13,7 +13,7 @@ Implementar en Thinkercad un programa en Arduino (para comprender el funcionamie
 -	Estudiar el funcionamiento del control remoto por infrarrojo, el cual posee un sensor y un receptor de infrarrojo.
 -	Observar como se conecta un microservomotor, la utilización correcta de los distintos pines, que es cada pin, los pines de la señal de reloj, de polarización y de tierra.
 -	Configurar el LCD, los pines utilizados, cuales son los pines para regular y alimentar el dispositivo.
--	Instalar un anillo de 12 neopixeles que básicamente es una matriz de leds.
+- Configurar los colores de un anillo de 12 neopixeles.
 
 
 ## 3. ESTADO DEL ARTE
@@ -25,17 +25,19 @@ Kuribayashi diseñó un actuador formado por dos alambres de Nitinol. Para este 
 
 ## 4. MARCO TEORIÓCO
 ### Arduino
+![](https://github.com/Rafa1104/Trabajo-de-Investigacion-P2/blob/master/img/placa-arduino-uno.jpg)
+
 Arduino es una plataforma de hardware de código abierto, basada en una placa de circuito impreso que contiene un microcontrolador de marca ATMEL que cuenta con entradas y salidas, analógicas y digitales, en un entorno de desarrollo que está basado en el lenguaje de programación procesing. El dispositivo conecta el mundo físico con el mundo virtual, o el mundo analógico con el digital controlando, sensores, alarmas, sistemas de luces, motores, y actuadores. (Tapia & Manzano, 2013)
 
 Hay muchas otros microcontroladores y plataformas disponibles para la computación física donde las funcionalidades y herramientas son muy complicadas de programar, Arduino simplifica el proceso de trabajar con microcontroladores, ofrece algunas ventajas y características respecto a otros sistemas. (Tapia & Manzano, 2013)
 
 ### Tinkercad
-# imagen
+![](https://github.com/Rafa1104/Trabajo-de-Investigacion-P2/blob/master/img/logo.png)
+
 [*Tinkercard*](https://www.tinkercad.com/) es una colección gratuita en línea de herramientas de software que ayudan a las personas de todo el mundo a pensar, crear y crear. Somos la introducción ideal a Autodesk, el líder en diseño 3D, ingeniería y software de entretenimiento.
 
 ### Anillo de 12 Neopixeles
-
-# anillos
+![](https://github.com/Rafa1104/Trabajo-de-Investigacion-P2/blob/master/img/neopixel.png)
 
 Los tecnología NeoPixel nos permite enlazar multitud LEDs RGB y controlarlos con un solo cable de datos, ahorrándonos multitud de cables y simplificando la instalación.
 
@@ -48,8 +50,7 @@ Como nota importante NeoPixels funciona para la mayoría de microcontroladores p
 Para controlar cada uno de LEDs tendremos que usar biblioteca específica de Adafruit.
 
 ### Control remoto por IR
-
-# img
+![](https://github.com/Rafa1104/Trabajo-de-Investigacion-P2/blob/master/img/ir%20remote.png)
 
 El control remoto IR (infrarrojos) o mando a distancia de infrarrojos funciona emitiendo pulsos de luz infrarroja (por debajo del visible). La señal infrarroja transmite el código correspondiente al botón del mando a distancia pulsado al dispositivo en forma de una serie de impulsos de luz infrarroja. El receptor recibe la serie de impulsos de infrarrojos y los pasa a un procesador que descodifica y activarán una determinada función del dispositivo.
 
@@ -60,8 +61,7 @@ Los obstáculos entre el mando y el receptor incluyen mucho en la señal, no lle
 Podemos concluir con los mandos a distancia por infrarrojos son buenos para los casos que tengamos un solo dispositivo ya que no abre tanto la señal que emite como para alcanzar varios dispositivos. 
 
 ### Display LCD
-
-# img lcd
+![](https://github.com/Rafa1104/Trabajo-de-Investigacion-P2/blob/master/img/lcd.jpg)
 
 Las siglas LCD significan “Liquid Cristal Display” ó pantalla de cristal líquido. Es una pantalla plana basada en el uso de una sustancia liquida atrapada entre dos placas de vidrio, haciendo pasar por este una corriente eléctrica a una zona especifica, para que así esta se vuelva opaca, y además cuenta (generalmente) con iluminación trasera.
 
@@ -69,7 +69,8 @@ Las pantallas LCD de color, cada pixel individual se divide en tres cédulas o s
 
 Estos displays se controlan muy facilmente con una placa Arduino o un PIC y muy pocas lineas de código. Acontinuación sus pines para su conexión:
 
-# imagenes
+![](https://github.com/Rafa1104/Trabajo-de-Investigacion-P2/blob/master/img/LCD.png) 
+![](https://github.com/Rafa1104/Trabajo-de-Investigacion-P2/blob/master/img/LCD-pines.png)
 
 - Pin 1 – **Vss:** GND o tierra.
 
@@ -101,40 +102,42 @@ no permitiendonos realizar ninguna operación hasta que se deshabilite.
 - Pin 16 – **Cátodo de la retroiluminación:** GND.
 
 ### Microservomotor
-# micro serv
+![](https://github.com/Rafa1104/Trabajo-de-Investigacion-P2/blob/master/img/micro-servo-miniatura-sg90.jpg)
+
 Un servomotor es un tipo especial de motor que permite controlar la posición del eje en un momento dado. Esta diseñado para moverse determinada cantidad de grados y luego mantenerse fijo en una posición
 
 Un servomotor (o servo) es un tipo especial de motor con características especiales de control de posición. Al hablar de un servomotor se hace referencia a un sistema compuesto por componentes electromecánicos y electrónicos.
 
-# img servo
+![](https://github.com/Rafa1104/Trabajo-de-Investigacion-P2/blob/master/img/servo.jpg)
 
 El motor en el interior de un servomotor es un motor DC común y corriente. El eje del motor se acopla a una caja de engranajes similar a una transmisión. Esto se hace para potenciar el torque del motor y permitir mantener una posición fija cuando se requiera. De forma similar a un automóvil, a menor mayor velocidad, menor torque. El circuito electrónico es el encargado de manejar el movimiento y la posición del motor.
 
-# img servo 2
+![](https://github.com/Rafa1104/Trabajo-de-Investigacion-P2/blob/master/img/servo2.jpg)
 
 La presencia del sistema de engranajes como el que se muestra en la figura hace que cuando movemos el eje motor se sienta una inercia muy superior a la de un motor común y corriente. Observando las imágenes que hemos presentado nos podemos dar cuenta que un servo no es un motor como tal, sino un conjunto de partes (incluyendo un motor) que forman un sistema
 
 **Funcionamiento:**
 Los servomotores poseen tres cables, a diferencia de los motores comunes que sólo tienen dos. Estos tres cables casi siempre tienen los mismos colores, por lo que son fácilmente reconocibles.
 
-# img colo
+![](https://github.com/Rafa1104/Trabajo-de-Investigacion-P2/blob/master/img/servo%20color.png)
 
 Colores comunes de los cables de un servomotor
 Los colores dependerán del fabricante, pero difícilmente nos equivocaremos a la hora de reconocer los terminales del un servo.  La necesidad de una señal de control para el funcionamiento de este tipo de motores hace que sea imposible utilizarlos sin un circuito de control adecuado. Esto se debe a que para que el circuito de control interno funcione, es necesaria una señal de control modulada. Para esto se utiliza modulación por ancho de pulsos, es decir, PWM.
 
-# img diag
+![](https://github.com/Rafa1104/Trabajo-de-Investigacion-P2/blob/master/img/servo%20diagrama.png)
 
 El diagrama de bloque del servomotor representa de forma visual el servomotor como un sistema. El circuito electrónico es el encargado de recibir la señal PWM y traducirla en movimiento del Motor DC. El eje del motor DC está acoplado a un potenciómetro, el cual permite formar un divisor de voltaje. El voltaje en la salida del divisor varía en función de la posición del eje del motor DC.
 
 ### Motor de CC
-# cc
+![](https://github.com/Rafa1104/Trabajo-de-Investigacion-P2/blob/master/img/cc.jpg)
+
 El motor de corriente continua (motor DC) es una máquina que convierte la energía eléctrica en mecánica, provocando un movimiento rotatorio. En algunas modificaciones, ejercen tracción sobre un riel. Estos motores se conocen como motores lineales.
 
 Una máquina de corriente continua (generador o motor) se compone principalmente de dos partes, un estator que da soporte mecánico al aparato y tiene un hueco en el centro generalmente de forma cilíndrica. En el estator además se encuentran los polos, que pueden ser de imanes permanentes o devanados con hilo de cobre sobre núcleo de hierro. El rotor es generalmente de forma cilíndrica, también devanado y con núcleo, al que llega la corriente mediante dos escobillas.
 
 **Partes de un motor de corriente directa:**
 
-# img cc partes
+![](https://github.com/Rafa1104/Trabajo-de-Investigacion-P2/blob/master/img/cc%20partes.jpg)
 
 **Funcionamiento**
 
@@ -145,7 +148,7 @@ Cuando la corriente eléctrica circula por la bobina de este electroimán girato
 **CURVA TORQUE - VELOCIDAD**
 La siguiente gráfica es una representación de los torques que un motor puede proporcionar a diferentes velocidades a los voltajes nominales.
 
-# im cc tor
+![](https://github.com/Rafa1104/Trabajo-de-Investigacion-P2/blob/master/img/cc%20torque.png)
 
 Para un dado torque proporcionado por el motor, se puede utilizar la curva corriente-torque para determinar la corriente requerida cuando se le aplica el voltaje nominal al motor.
 
@@ -155,7 +158,7 @@ Como regla general, los motores generan grandes torques a baja velocidad, y gran
 **La velocidad de no carga (WMáx):** Es la máxima velocidad sostenida que puede lograr el motor. Esta velocidad sólo se puede lograr cuando no se aplica carga o torque al motor.
 
 ### Motor de vibración
-# img mv
+![](https://github.com/Rafa1104/Trabajo-de-Investigacion-P2/blob/master/img/mv.jpg)
 
 Es un motor de CC sin núcleo de tamaño compacto que se utiliza para informar a los usuarios de recibir la señal mediante vibración, sin sonido. Los motores de vibración se utilizan ampliamente en una variedad de aplicaciones, incluidos teléfonos celulares, teléfonos, buscapersonas, etc. Las características principales del motor de vibración es que el motor de CC sin núcleo del imán es permanente, lo que significa que siempre tendrá sus propiedades magnéticas (a diferencia de un electroimán, que solo se comporta como un imán cuando una corriente eléctrica lo atraviesa); Otra característica principal es que el tamaño del motor es pequeño y, por lo tanto, ligero. Además, el ruido y el consumo de energía que produce el motor durante el uso son bajos. Basado en esas características, el rendimiento del motor es altamente confiable.
 
@@ -205,7 +208,7 @@ Es un motor de CC sin núcleo de tamaño compacto que se utiliza para informar a
 - Se estudio y entendió el funcionamiento del control remoto por infrarrojo, el cual posee un sensor y un receptor de infrarrojo.
 - Se observo y aprendió cómo se conecta un microservomotor, la utilización correcta de los distintos pines, que es cada pin, los pines de la señal de reloj, de polarización y de tierra.
 - Se configuro el LCD, los pines utilizados, cuáles son los pines para regular y alimentar el dispositivo.
-# *- Se instalo un anillo de 12 neopixeles que básicamente es una matriz de leds.*
+- Se configuró los leds de un anillo de 12 neopixeles.
 
 
 ## 12. RECOMENDACIONES
