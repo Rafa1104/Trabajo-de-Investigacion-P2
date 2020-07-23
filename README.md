@@ -12,7 +12,6 @@ Implementar en Thinkercad un programa en Arduino (para comprender el funcionamie
 -	Constatar que son los motores CC, como se alimentan, tipo de torque que poseen y tipo de velocidades alcanzan. 
 -	Estudiar el funcionamiento del control remoto por infrarrojo, el cual posee un sensor y un receptor de infrarrojo.
 -	Observar como se conecta un microservomotor, la utilización correcta de los distintos pines, que es cada pin, los pines de la señal de reloj, de polarización y de tierra.
--	Comparar el motor de vibración con el motor CC los cuales son muy parecidos en su funcionamiento solo de encendido y apagado
 -	Configurar el LCD, los pines utilizados, cuales son los pines para regular y alimentar el dispositivo.
 # ***-	Instalar un anillo de 12 neopixeles que básicamente es una matriz de leds.***
 
@@ -158,6 +157,7 @@ Como regla general, los motores generan grandes torques a baja velocidad, y gran
 ### Motor de vibración
 # img mv
 
+Es un motor de CC sin núcleo de tamaño compacto que se utiliza para informar a los usuarios de recibir la señal mediante vibración, sin sonido. Los motores de vibración se utilizan ampliamente en una variedad de aplicaciones, incluidos teléfonos celulares, teléfonos, buscapersonas, etc. Las características principales del motor de vibración es que el motor de CC sin núcleo del imán es permanente, lo que significa que siempre tendrá sus propiedades magnéticas (a diferencia de un electroimán, que solo se comporta como un imán cuando una corriente eléctrica lo atraviesa); Otra característica principal es que el tamaño del motor es pequeño y, por lo tanto, ligero. Además, el ruido y el consumo de energía que produce el motor durante el uso son bajos. Basado en esas características, el rendimiento del motor es altamente confiable.
 
 ## 5. DIAGRAMAS
 - Diagramas de bloques.
@@ -204,8 +204,7 @@ Como regla general, los motores generan grandes torques a baja velocidad, y gran
 - Se constato que son los motores CC, como se alimentan, tipo de torque que poseen y tipo de velocidades alcanzan. 
 - Se estudio y entendió el funcionamiento del control remoto por infrarrojo, el cual posee un sensor y un receptor de infrarrojo.
 - Se observo y aprendió cómo se conecta un microservomotor, la utilización correcta de los distintos pines, que es cada pin, los pines de la señal de reloj, de polarización y de tierra.
-- Se comparo el motor de vibración con el motor CC los cuales son muy parecidos en su funcionamiento solo de encendido y apagado
-- Se configuro el LCD, los pines utilizados, como se conectan, la configuración de 4 bytes, 8 bytes, cuáles son los pines para regular y alimentar el dispositivo.
+- Se configuro el LCD, los pines utilizados, cuáles son los pines para regular y alimentar el dispositivo.
 # *- Se instalo un anillo de 12 neopixeles que básicamente es una matriz de leds.*
 
 
