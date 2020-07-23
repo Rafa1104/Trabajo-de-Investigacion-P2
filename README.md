@@ -35,6 +35,9 @@ Hay muchas otros microcontroladores y plataformas disponibles para la computaci�
 [*Tinkercard*](https://www.tinkercad.com/) es una colección gratuita en línea de herramientas de software que ayudan a las personas de todo el mundo a pensar, crear y crear. Somos la introducción ideal a Autodesk, el líder en diseño 3D, ingeniería y software de entretenimiento.
 
 ### Anillo de 12 Neopixeles
+
+# anillos
+
 Los tecnología NeoPixel nos permite enlazar multitud LEDs RGB y controlarlos con un solo cable de datos, ahorrándonos multitud de cables y simplificando la instalación.
 
 LEDs RGB (rojo, verde y azul) están integrados junto con un chip driver en una pequeña superficie a través de un cable. NeoPixel viene de diferentes formas y tamaño, en esta ocasión nos enfocaremos en el aro de 12 Leds.
@@ -44,9 +47,11 @@ NeoPixels no se iluminan por si solos, necesitan de un microcontrolador para que
 Como nota importante NeoPixels funciona para la mayoría de microcontroladores pero se le dificulta cuando trabaja con plataformas como Raspberry Pi, pues la señal de control es muy estricta.
 
 Para controlar cada uno de LEDs tendremos que usar biblioteca específica de Adafruit.
-# image
 
 ### Control remoto por IR
+
+# img
+
 El control remoto IR (infrarrojos) o mando a distancia de infrarrojos funciona emitiendo pulsos de luz infrarroja (por debajo del visible). La señal infrarroja transmite el código correspondiente al botón del mando a distancia pulsado al dispositivo en forma de una serie de impulsos de luz infrarroja. El receptor recibe la serie de impulsos de infrarrojos y los pasa a un procesador que descodifica y activarán una determinada función del dispositivo.
 
 Este tipo de de señal tiene muy poco alcance, apenas unos metros, comparada con la señal de radiofrecuencia. Es muy «direccional», es decir, es necesario que el emisor de la señal infrarroja apunte el receptor. Si la señal es muy débil, falta de batería en el mando, podemos ver que  es  muy necesario apuntar directamente e incluso acercarse al receptor. 
@@ -54,9 +59,11 @@ Este tipo de de señal tiene muy poco alcance, apenas unos metros, comparada con
 Los obstáculos entre el mando y el receptor incluyen mucho en la señal, no llegará a su destino. Esto seguro que has probado con el mando a distancia de la televisión, cuando alguien se pone entre el mando y la televisión no llega la señal.
 
 Podemos concluir con los mandos a distancia por infrarrojos son buenos para los casos que tengamos un solo dispositivo ya que no abre tanto la señal que emite como para alcanzar varios dispositivos. 
-# ima
 
 ### Display LCD
+
+# img lcd
+
 Las siglas LCD significan “Liquid Cristal Display” ó pantalla de cristal líquido. Es una pantalla plana basada en el uso de una sustancia liquida atrapada entre dos placas de vidrio, haciendo pasar por este una corriente eléctrica a una zona especifica, para que así esta se vuelva opaca, y además cuenta (generalmente) con iluminación trasera.
 
 Las pantallas LCD de color, cada pixel individual se divide en tres cédulas o sub pixeles con los colores RGB (Rojo, Verde y Azul) respectivamente. Y así cada pixel puede controlarse para  producir una gran variedad de colores distintos.
@@ -95,19 +102,61 @@ no permitiendonos realizar ninguna operación hasta que se deshabilite.
 - Pin 16 – **Cátodo de la retroiluminación:** GND.
 
 ### Microservomotor
+# micro serv
+Un servomotor es un tipo especial de motor que permite controlar la posición del eje en un momento dado. Esta diseñado para moverse determinada cantidad de grados y luego mantenerse fijo en una posición
+
+Un servomotor (o servo) es un tipo especial de motor con características especiales de control de posición. Al hablar de un servomotor se hace referencia a un sistema compuesto por componentes electromecánicos y electrónicos.
+
+# img servo
+
+El motor en el interior de un servomotor es un motor DC común y corriente. El eje del motor se acopla a una caja de engranajes similar a una transmisión. Esto se hace para potenciar el torque del motor y permitir mantener una posición fija cuando se requiera. De forma similar a un automóvil, a menor mayor velocidad, menor torque. El circuito electrónico es el encargado de manejar el movimiento y la posición del motor.
+
+# img servo 2
+
+La presencia del sistema de engranajes como el que se muestra en la figura hace que cuando movemos el eje motor se sienta una inercia muy superior a la de un motor común y corriente. Observando las imágenes que hemos presentado nos podemos dar cuenta que un servo no es un motor como tal, sino un conjunto de partes (incluyendo un motor) que forman un sistema
+
+**Funcionamiento:**
+Los servomotores poseen tres cables, a diferencia de los motores comunes que sólo tienen dos. Estos tres cables casi siempre tienen los mismos colores, por lo que son fácilmente reconocibles.
+
+# img colo
+
+Colores comunes de los cables de un servomotor
+Los colores dependerán del fabricante, pero difícilmente nos equivocaremos a la hora de reconocer los terminales del un servo.  La necesidad de una señal de control para el funcionamiento de este tipo de motores hace que sea imposible utilizarlos sin un circuito de control adecuado. Esto se debe a que para que el circuito de control interno funcione, es necesaria una señal de control modulada. Para esto se utiliza modulación por ancho de pulsos, es decir, PWM.
+
+# img diag
+
+El diagrama de bloque del servomotor representa de forma visual el servomotor como un sistema. El circuito electrónico es el encargado de recibir la señal PWM y traducirla en movimiento del Motor DC. El eje del motor DC está acoplado a un potenciómetro, el cual permite formar un divisor de voltaje. El voltaje en la salida del divisor varía en función de la posición del eje del motor DC.
 
 ### Motor de CC
-Un motor de corriente continua convierte la energía eléctrica en mecánica. Se compone de dos partes: el estator y el rotor.
+# cc
+El motor de corriente continua (motor DC) es una máquina que convierte la energía eléctrica en mecánica, provocando un movimiento rotatorio. En algunas modificaciones, ejercen tracción sobre un riel. Estos motores se conocen como motores lineales.
 
-El estator es la parte mecánica del motor donde están los polos del imán.
+Una máquina de corriente continua (generador o motor) se compone principalmente de dos partes, un estator que da soporte mecánico al aparato y tiene un hueco en el centro generalmente de forma cilíndrica. En el estator además se encuentran los polos, que pueden ser de imanes permanentes o devanados con hilo de cobre sobre núcleo de hierro. El rotor es generalmente de forma cilíndrica, también devanado y con núcleo, al que llega la corriente mediante dos escobillas.
 
-El rotor es la parte móvil del motor con devanado y un núcleo, al que llega la corriente a través de las escobillas.
+**Partes de un motor de corriente directa:**
 
-Cuando la corriente eléctrica circula por el devanado del rotor, se crea un campo electromagnético. Este interactúa con el campo magnético del imán del estator. Esto deriva en un rechazo entre los polos del imán del estator y del rotor creando un par de fuerza donde el rotor gira en un sentido de forma permanente.
+# img cc partes
 
-Si queremos cambiar el sentido de giro del rotor, tenemos que cambiar el sentido de la corriente que le proporcionamos al rotor; basta con invertir la polaridad de la pila o batería.
+**Funcionamiento**
+
+Se basa en la repulsión que ejercen los polos magnéticos de un imán permanente de acuerdo con la Ley de Lorentz, interactúan con los polos magnéticos de un electroimán que se encuentra montado en el rotor.
+
+Cuando la corriente eléctrica circula por la bobina de este electroimán giratorio, el campo electromagnético que se genera interactúa con el campo magnético del imán permanente o devanado. Si los polos del imán permanente o devanado y los polos del electroimán giratorio coinciden, se produce un rechazo y un torque magnético (par de fuerza que provoca que el rotor rompa la inercia y comience a girar sobre su eje) en sentido a la forma que se encuentre conectado el motor al circuito o la pila.
+
+**CURVA TORQUE - VELOCIDAD**
+La siguiente gráfica es una representación de los torques que un motor puede proporcionar a diferentes velocidades a los voltajes nominales.
+
+# im cc tor
+
+Para un dado torque proporcionado por el motor, se puede utilizar la curva corriente-torque para determinar la corriente requerida cuando se le aplica el voltaje nominal al motor.
+
+Como regla general, los motores generan grandes torques a baja velocidad, y grandes torques implican una demanda mayor de corriente por parte del motor.
+
+**El torque de arranque o torque crítico (Ts):** Es el torque máximo que puede proporcionar un motor a velocidad cero, asociado con el arranque o sobrecarga del motor.
+**La velocidad de no carga (WMáx):** Es la máxima velocidad sostenida que puede lograr el motor. Esta velocidad sólo se puede lograr cuando no se aplica carga o torque al motor.
 
 ### Motor de vibración
+# img mv
 
 
 ## 5. DIAGRAMAS
