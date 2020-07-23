@@ -260,4 +260,10 @@ TinkerCAD se puede utilizar para una gran variedad de aplicaciones, incluida la 
 ## 14. BIBLIOGRAFIA
 - Arduino, S. A. (2015). Arduino. Arduino LLC.
 - Badamasi, Y. A. (2014, September). The working principle of an Arduino. In 2014 11th international conference on electronics, computer and computation (ICECCO) (pp. 1-4). IEEE.
+- Diferencias entre Control Remoto IR vs RF. (s. f.). LEDBOX. Recuperado 20 de julio de 2020, de https://blog.ledbox.es/noticias-y-novedades/curiosidades-led/diferencias-entre-control-remoto-ir-vs-rf#:~:text=El%20control%20remoto%20IR%20(infrarrojos,de%20impulsos%20de%20luz%20infrarroja.
+- Dehara, Z. (2016, 2 abril). Tutorial de NeoPixel con Arduino. – T-Bem. TESLA BEM. https://teslabem.com/arduino/tutorial-de-neopixel-con-arduino/
+- Introducción a las LCD. (s. f.). 5Hertz Electrónica. Recuperado 20 de julio de 2020, de https://www.5hertz.com/index.php?route=tutoriales/tutorial&tutorial_id=9
+- J. (2014, 24 marzo). Caracteristicas de los Pines de la LCD 16X2. Jovanna Yepez. https://jovannayepez.wordpress.com/2014/03/24/caracteristicas-de-los-pines-de-la-lcd-16x2/
+- González, A. G. (2016, 4 diciembre). ¿Qué es y cómo funciona un servomotor? Panama Hitek. http://panamahitek.com/que-es-y-como-funciona-un-servomotor/#:%7E:text=Un%20servomotor%20es%20un%20tipo,mantenerse%20fijo%20en%20una%20posici%C3%B3n.
+- J. (2016, 18 diciembre). Sensores y Actuadores. Aprendiendo Arduino. https://aprendiendoarduino.wordpress.com/2016/12/18/sensores-y-actuadores/
 
