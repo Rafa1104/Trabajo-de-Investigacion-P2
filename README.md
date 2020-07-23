@@ -146,6 +146,7 @@ Se basa en la repulsión que ejercen los polos magnéticos de un imán permanent
 Cuando la corriente eléctrica circula por la bobina de este electroimán giratorio, el campo electromagnético que se genera interactúa con el campo magnético del imán permanente o devanado. Si los polos del imán permanente o devanado y los polos del electroimán giratorio coinciden, se produce un rechazo y un torque magnético (par de fuerza que provoca que el rotor rompa la inercia y comience a girar sobre su eje) en sentido a la forma que se encuentre conectado el motor al circuito o la pila.
 
 **CURVA TORQUE - VELOCIDAD**
+
 La siguiente gráfica es una representación de los torques que un motor puede proporcionar a diferentes velocidades a los voltajes nominales.
 
 ![](https://github.com/Rafa1104/Trabajo-de-Investigacion-P2/blob/master/img/cc%20torque.png)
@@ -163,11 +164,26 @@ Como regla general, los motores generan grandes torques a baja velocidad, y gran
 Es un motor de CC sin núcleo de tamaño compacto que se utiliza para informar a los usuarios de recibir la señal mediante vibración, sin sonido. Los motores de vibración se utilizan ampliamente en una variedad de aplicaciones, incluidos teléfonos celulares, teléfonos, buscapersonas, etc. Las características principales del motor de vibración es que el motor de CC sin núcleo del imán es permanente, lo que significa que siempre tendrá sus propiedades magnéticas (a diferencia de un electroimán, que solo se comporta como un imán cuando una corriente eléctrica lo atraviesa); Otra característica principal es que el tamaño del motor es pequeño y, por lo tanto, ligero. Además, el ruido y el consumo de energía que produce el motor durante el uso son bajos. Basado en esas características, el rendimiento del motor es altamente confiable.
 
 ## 5. DIAGRAMAS
-- Diagramas de bloques.
-- Diagramas UML...(casos de uso-clase)
-- Diagramas eléctricos.
-- Diagramas esquemáticos.
+### Anillo de 12 Neopixeles
+![](https://github.com/Rafa1104/Trabajo-de-Investigacion-P2/blob/master/img/Actuadores/Anillo%20de%2012%20Neopixeles.png)
 
+### Control Remoto por IR
+![](https://github.com/Rafa1104/Trabajo-de-Investigacion-P2/blob/master/img/Actuadores/Control%20Remoro%20por%20IR.png)
+
+### Motor de CC
+![](https://github.com/Rafa1104/Trabajo-de-Investigacion-P2/blob/master/img/Actuadores/DC%20Motor.png)
+
+### Display LCD
+![](https://github.com/Rafa1104/Trabajo-de-Investigacion-P2/blob/master/img/Actuadores/Display%20LCD.png)
+
+### Microservomotor
+![](https://github.com/Rafa1104/Trabajo-de-Investigacion-P2/blob/master/img/Actuadores/Microservomotor.png)
+
+### Motor de Vibracióon
+![](https://github.com/Rafa1104/Trabajo-de-Investigacion-P2/blob/master/img/Actuadores/Motor%20de%20Vibraci%C3%B3n.png)
+
+### Aporte
+![](https://github.com/Rafa1104/Trabajo-de-Investigacion-P2/blob/master/img/Actuadores/IR-Decode%20Value.png)
 
 ## 6. LISTA DE COMPONENTES
 | **COMPONENTE** | **DESCRIPCIÓN** |
