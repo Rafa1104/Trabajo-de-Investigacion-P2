@@ -13,7 +13,7 @@ Implementar en Thinkercad un programa en Arduino (para comprender el funcionamie
 -	Estudiar el funcionamiento del control remoto por infrarrojo, el cual posee un sensor y un receptor de infrarrojo.
 -	Observar como se conecta un microservomotor, la utilización correcta de los distintos pines, que es cada pin, los pines de la señal de reloj, de polarización y de tierra.
 -	Comparar el motor de vibración con el motor CC los cuales son muy parecidos en su funcionamiento solo de encendido y apagado
--	Configurar el LCD, los pines utilizados, como se conectan, la configuración de 4 bytes, 8 bytes, cuales son los pines para regular y alimentar el dispositivo.
+-	Configurar el LCD, los pines utilizados, cuales son los pines para regular y alimentar el dispositivo.
 # ***-	Instalar un anillo de 12 neopixeles que básicamente es una matriz de leds.***
 
 
@@ -31,6 +31,7 @@ Arduino es una plataforma de hardware de código abierto, basada en una placa de
 Hay muchas otros microcontroladores y plataformas disponibles para la computación física donde las funcionalidades y herramientas son muy complicadas de programar, Arduino simplifica el proceso de trabajar con microcontroladores, ofrece algunas ventajas y características respecto a otros sistemas. (Tapia & Manzano, 2013)
 
 ### Tinkercad
+# imagen
 [*Tinkercard*](https://www.tinkercad.com/) es una colección gratuita en línea de herramientas de software que ayudan a las personas de todo el mundo a pensar, crear y crear. Somos la introducción ideal a Autodesk, el líder en diseño 3D, ingeniería y software de entretenimiento.
 
 ### Anillo de 12 Neopixeles
@@ -43,6 +44,7 @@ NeoPixels no se iluminan por si solos, necesitan de un microcontrolador para que
 Como nota importante NeoPixels funciona para la mayoría de microcontroladores pero se le dificulta cuando trabaja con plataformas como Raspberry Pi, pues la señal de control es muy estricta.
 
 Para controlar cada uno de LEDs tendremos que usar biblioteca específica de Adafruit.
+# image
 
 ### Control remoto por IR
 El control remoto IR (infrarrojos) o mando a distancia de infrarrojos funciona emitiendo pulsos de luz infrarroja (por debajo del visible). La señal infrarroja transmite el código correspondiente al botón del mando a distancia pulsado al dispositivo en forma de una serie de impulsos de luz infrarroja. El receptor recibe la serie de impulsos de infrarrojos y los pasa a un procesador que descodifica y activarán una determinada función del dispositivo.
@@ -52,8 +54,45 @@ Este tipo de de señal tiene muy poco alcance, apenas unos metros, comparada con
 Los obstáculos entre el mando y el receptor incluyen mucho en la señal, no llegará a su destino. Esto seguro que has probado con el mando a distancia de la televisión, cuando alguien se pone entre el mando y la televisión no llega la señal.
 
 Podemos concluir con los mandos a distancia por infrarrojos son buenos para los casos que tengamos un solo dispositivo ya que no abre tanto la señal que emite como para alcanzar varios dispositivos. 
+# ima
 
 ### Display LCD
+Las siglas LCD significan “Liquid Cristal Display” ó pantalla de cristal líquido. Es una pantalla plana basada en el uso de una sustancia liquida atrapada entre dos placas de vidrio, haciendo pasar por este una corriente eléctrica a una zona especifica, para que así esta se vuelva opaca, y además cuenta (generalmente) con iluminación trasera.
+
+Las pantallas LCD de color, cada pixel individual se divide en tres cédulas o sub pixeles con los colores RGB (Rojo, Verde y Azul) respectivamente. Y así cada pixel puede controlarse para  producir una gran variedad de colores distintos.
+
+Estos displays se controlan muy facilmente con una placa Arduino o un PIC y muy pocas lineas de código. Acontinuación sus pines para su conexión:
+
+# imagenes
+
+- Pin 1 – **Vss:** GND o tierra.
+
+- Pin 2 – **Vdd:** Alimentación Vcc o +5V.
+(Algunos pueden alimentarse a 3 Vcc)
+
+- Pin 3 – **V0:** Control del contraste del display, conectamos este pin al terminal variable de un potenciómetro conectado a Vcc y Masa en sus terminales extremos.
+
+- Pin 4 – **RS:** Selección de Registro.
+0 lógico: Registro de comandos (escritura),
+1 lógico: Registro de datos (escritura, lectura)
+
+- Pin 5 – **R/W:**
+0 lógico: Escritura del LCD.
+1 Lógico: Lectura del LCD.
+
+- Pin 6 – **Enable**: El famoso Enable de casi todos los componentes de la electrónica digital. Un 1 lógico señala el inicio de escritura o lectura del LCD, un 0 lógico, desactiva todas las funciones.
+
+- Pin 7-10 – **D0/D3:** Pines correspondientes al bus de datos.
+D0 corresponde al bit menos significativo.
+Estos pines no se utilizan si realizamos operaciones sobre el LCD de 4 bits.
+
+- Pin 11-14 – **D4/D7:** Pines correspondientes al bus de datos.
+D7 corresponde al bit más significativo y puede utilizarse como “Busy Flag”,
+si leemos sobre este pin, un 1 lógico nos indicará que el LCD se encuentra ocupado,
+no permitiendonos realizar ninguna operación hasta que se deshabilite.
+
+- Pin 15 – **Ánodo de la retroiluminación :** R + 5V.
+- Pin 16 – **Cátodo de la retroiluminación:** GND.
 
 ### Microservomotor
 
