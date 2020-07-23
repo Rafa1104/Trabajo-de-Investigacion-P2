@@ -13,7 +13,7 @@ Implementar en Thinkercad un programa en Arduino (para comprender el funcionamie
 -	Estudiar el funcionamiento del control remoto por infrarrojo, el cual posee un sensor y un receptor de infrarrojo.
 -	Observar como se conecta un microservomotor, la utilización correcta de los distintos pines, que es cada pin, los pines de la señal de reloj, de polarización y de tierra.
 -	Configurar el LCD, los pines utilizados, cuales son los pines para regular y alimentar el dispositivo.
-# ***-	Instalar un anillo de 12 neopixeles que básicamente es una matriz de leds.***
+-	Instalar un anillo de 12 neopixeles que básicamente es una matriz de leds.
 
 
 ## 3. ESTADO DEL ARTE
