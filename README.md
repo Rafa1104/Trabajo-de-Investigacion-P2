@@ -235,7 +235,7 @@ Es un motor de CC sin núcleo de tamaño compacto que se utiliza para informar a
 En este programa se utilizo la libreria *Adafruit_Neopixel* la cual nos perimite que la elaboración del codigo sea mas sencilla y con menos lineas de codigo. Este programa utiliza un modelo de color RGB (Red, Green, Blue), el cual se muestra un color en el anillo de leds en secuencia es decir que se prende cada Neopixel uno por uno con el mismo color que el programa escogio al azar y al terminar una vuelta, muestra otro color al azar que este dentro de los parametros de RGB que va desde 0 a 255 que define la intensidad del color.
 
 ### Control Remoto por IR
-En este programa se utilizo la libreria *IRremote*, para este ejemplo al momento de aplastar los botones del 1 al 4 se va a encender el LED que se le designo a cada boton, al momento de aplastar el boton un LED se va a encender durante un periodo de tiempo y termina apagandose, lo mismo sucede con los otros botones.
+En este programa se utilizo la libreria *IRremote*, para este ejemplo al momento de aplastar los botones del 1 al 4 se va a encender el LED que se le designo a cada boton, al momento de aplastar el boton un LED, en sensor de IR el cual lee la señal y le manda una señal al arduino indicando que boton fue aplastado, como resultado se va a encender durante un periodo de tiempo y termina apagandose, lo mismo sucede con los otros botones.
 
 ### Display LCD
 En este programa se utilizó la libreria *LiquidCristal*, en este ejemplo se uso un display LCD de 16x2 el cual siginifica que tiene 16 columnas y 2 filas, lo que se hizo fue iniciar en el punto (16, 2) para que le texto aparazca en la parte superior y para la siguiente fila se uso como punto de inicio el (0, 1). Habiendo establecido nuestros puntos de inicio el texto que mandemos al programa se va a imprimir y se dezplazara a la izquierda hasta que desapareca por completo el texto y volvera a parecer desde el lado derecho.
@@ -246,13 +246,13 @@ En este programa se utilizó la libreria *Servo*. El ejemplo empleado el servomo
 ### Motor de CC
 Con el uso de un potenciómetro se le va cambiando las revolciones que tiene el motor, para poder evidenciar la velocidad se le implemento un lED, este led parpadea ya sea rapido o lento dependiendo el potenciómetro, el cual es muy útil para poder ver que tan rapido esta yendo el motor de CC
 ### Motor de Vibración
-
+Para el motor de Vibración se uso un potenciómetro el cual nos servira para modificar la intensidad de vibración del motor.
 
 ## 9. DESCRIPCIÓN DE PREREQUISITOS Y CONFIGURACIÓN
-
+Para la simulacion en Tinkercad lo unico que se necesito son las librerias para algunos programs que Tinkercad te ofrece, pero si queremo usar el programa de Arduino hay que revisar que dichas librerias esten instaladas, caso contrario se necesitaran intalarlas para que el porgrama no tenga errores
 
 ## 10. APORTACIONES
-
+En las aportacion se hizo uso el Control Remoto IR, su respectivo sensor y un display LCD (16X2), este programa nos decodifica la señal enviada desde el control para que nos aparezca en el display en Hexadecimal la señal que se mando a traves del control, lo mismo sucede con cualquier boton, cada boton tiene una señal única, tambien funciona si usamos otros controles de IR, pero como son distintos nos van a mostrar un codigigo diferente.
 
 ## 11. CONCLUSIONES
 Se implemento en Thinkercad un programa en Arduino por cada uno de los sensores utilizados en la demostración del programa, en el cual lo principal fue verificar la transmisión de datos desde la tarjeta antes mencionada hasta los periféricos usados en la práctica. 
