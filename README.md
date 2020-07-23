@@ -172,14 +172,14 @@ Es un motor de CC sin núcleo de tamaño compacto que se utiliza para informar a
 ### Control Remoto por IR
 ![](https://github.com/Rafa1104/Trabajo-de-Investigacion-P2/blob/master/img/Actuadores/Control%20Remoro%20por%20IR.png)
 
-### Motor de CC
-![](https://github.com/Rafa1104/Trabajo-de-Investigacion-P2/blob/master/img/Actuadores/DC%20Motor.png)
-
 ### Display LCD
 ![](https://github.com/Rafa1104/Trabajo-de-Investigacion-P2/blob/master/img/Actuadores/Display%20LCD.png)
 
 ### Microservomotor
 ![](https://github.com/Rafa1104/Trabajo-de-Investigacion-P2/blob/master/img/Actuadores/Microservomotor.png)
+
+### Motor de CC
+![](https://github.com/Rafa1104/Trabajo-de-Investigacion-P2/blob/master/img/Actuadores/DC%20Motor.png)
 
 ### Motor de Vibracióon
 ![](https://github.com/Rafa1104/Trabajo-de-Investigacion-P2/blob/master/img/Actuadores/Motor%20de%20Vibraci%C3%B3n.png)
@@ -231,6 +231,21 @@ Es un motor de CC sin núcleo de tamaño compacto que se utiliza para informar a
 
 
 ## 8.EXPLICACIÓN DEL CODIGO FUENTE
+### Anillo de 12 Neopixeles
+En este programa se utilizo la libreria *Adafruit_Neopixel* la cual nos perimite que la elaboración del codigo sea mas sencilla y con menos lineas de codigo. Este programa utiliza un modelo de color RGB (Red, Green, Blue), el cual se muestra un color en el anillo de leds en secuencia es decir que se prende cada Neopixel uno por uno con el mismo color que el programa escogio al azar y al terminar una vuelta, muestra otro color al azar que este dentro de los parametros de RGB que va desde 0 a 255 que define la intensidad del color.
+
+### Control Remoto por IR
+En este programa se utilizo la libreria *IRremote*, para este ejemplo al momento de aplastar los botones del 1 al 4 se va a encender el LED que se le designo a cada boton, al momento de aplastar el boton un LED se va a encender durante un periodo de tiempo y termina apagandose, lo mismo sucede con los otros botones.
+
+### Display LCD
+En este programa se utilizó la libreria *LiquidCristal*, en este ejemplo se uso un display LCD de 16x2 el cual siginifica que tiene 16 columnas y 2 filas, lo que se hizo fue iniciar en el punto (16, 2) para que le texto aparazca en la parte superior y para la siguiente fila se uso como punto de inicio el (0, 1). Habiendo establecido nuestros puntos de inicio el texto que mandemos al programa se va a imprimir y se dezplazara a la izquierda hasta que desapareca por completo el texto y volvera a parecer desde el lado derecho.
+
+### Microservomotor
+En este programa se utilizó la libreria *Servo*. El ejemplo empleado el servomotor parte desde 0  hasta 180 grados en un timepo establecido y va aumentando 1 grado hatsa que llegue a los 180 durante un tiempo establecido, el cual nos permite modificar la velocidad en el que va a llegar a 180, una vez que llego a los 180 grados el servo motor regresa restando 1 grado hasta llegar a 0; si el tiempo defino es corto el servo motor va a llegar al punto establecido en ese lapso y se puede ver que va rapido, mientras si el tiempo es mas largo, se va a demorar en llegar al punto establecido.
+
+### Motor de CC
+Con el uso de un potenciómetro se le va cambiando las revolciones que tiene el motor, para poder evidenciar la velocidad se le implemento un lED, este led parpadea ya sea rapido o lento dependiendo el potenciómetro, el cual es muy útil para poder ver que tan rapido esta yendo el motor de CC
+### Motor de Vibración
 
 
 ## 9. DESCRIPCIÓN DE PREREQUISITOS Y CONFIGURACIÓN
@@ -240,12 +255,12 @@ Es un motor de CC sin núcleo de tamaño compacto que se utiliza para informar a
 
 
 ## 11. CONCLUSIONES
-- Se implemento en Thinkercad un programa en Arduino por cada uno de los sensores utilizados en la demostración del programa, en el cual lo principal fue verificar la transmisión de datos desde la tarjeta antes mencionada hasta los periféricos usados en la práctica. 
-- Se constato que son los motores CC, como se alimentan, tipo de torque que poseen y tipo de velocidades alcanzan. 
-- Se estudio y entendió el funcionamiento del control remoto por infrarrojo, el cual posee un sensor y un receptor de infrarrojo.
-- Se observo y aprendió cómo se conecta un microservomotor, la utilización correcta de los distintos pines, que es cada pin, los pines de la señal de reloj, de polarización y de tierra.
-- Se configuro el LCD, los pines utilizados, cuáles son los pines para regular y alimentar el dispositivo.
-- Se configuró los leds de un anillo de 12 neopixeles.
+Se implemento en Thinkercad un programa en Arduino por cada uno de los sensores utilizados en la demostración del programa, en el cual lo principal fue verificar la transmisión de datos desde la tarjeta antes mencionada hasta los periféricos usados en la práctica. 
+Se constato que son los motores CC, como se alimentan, tipo de torque que poseen y tipo de velocidades alcanzan. 
+Se estudio y entendió el funcionamiento del control remoto por infrarrojo, el cual posee un sensor y un receptor de infrarrojo.
+Se observo y aprendió cómo se conecta un microservomotor, la utilización correcta de los distintos pines, que es cada pin, los pines de la señal de reloj, de polarización y de tierra.
+Se configuro el LCD, los pines utilizados, como se conectan, cuáles son los pines para regular y alimentar el dispositivo.
+Se configuró los leds de un anillo de 12 Neopixeles.
 
 
 ## 12. RECOMENDACIONES
@@ -266,5 +281,4 @@ TinkerCAD se puede utilizar para una gran variedad de aplicaciones, incluida la 
 - J. (2014, 24 marzo). Caracteristicas de los Pines de la LCD 16X2. Jovanna Yepez. https://jovannayepez.wordpress.com/2014/03/24/caracteristicas-de-los-pines-de-la-lcd-16x2/
 - González, A. G. (2016, 4 diciembre). ¿Qué es y cómo funciona un servomotor? Panama Hitek. http://panamahitek.com/que-es-y-como-funciona-un-servomotor/#:%7E:text=Un%20servomotor%20es%20un%20tipo,mantenerse%20fijo%20en%20una%20posici%C3%B3n.
 - J. (2016, 18 diciembre). Sensores y Actuadores. Aprendiendo Arduino. https://aprendiendoarduino.wordpress.com/2016/12/18/sensores-y-actuadores/
-
 
