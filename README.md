@@ -267,3 +267,4 @@ TinkerCAD se puede utilizar para una gran variedad de aplicaciones, incluida la 
 - González, A. G. (2016, 4 diciembre). ¿Qué es y cómo funciona un servomotor? Panama Hitek. http://panamahitek.com/que-es-y-como-funciona-un-servomotor/#:%7E:text=Un%20servomotor%20es%20un%20tipo,mantenerse%20fijo%20en%20una%20posici%C3%B3n.
 - J. (2016, 18 diciembre). Sensores y Actuadores. Aprendiendo Arduino. https://aprendiendoarduino.wordpress.com/2016/12/18/sensores-y-actuadores/
 
+
