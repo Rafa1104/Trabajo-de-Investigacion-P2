@@ -1,1 +1,2 @@
-[![Watch the video](https://img.youtube.com/vi/T-D1KVIuvjA/maxresdefault.jpg)](https://youtu.be/RRDpHw5XtS4)
+# Video de Actuadores
+[![Watch the video](https://i9.ytimg.com/vi/RRDpHw5XtS4/mq2.jpg?sqp=CIDo5vgF&rs=AOn4CLAMt0gaHiu1FyxNOHOaPJYCpwaCJA)](https://youtu.be/RRDpHw5XtS4)
