@@ -242,7 +242,7 @@ En este programa se utilizo la libreria *IRremote*, para este ejemplo al momento
 ![](https://github.com/Rafa1104/Trabajo-de-Investigacion-P2/blob/master/img/encendido.png)
 
 ### Display LCD
-En este programa se utilizó la libreria *LiquidCristal*, en este ejemplo se uso un display LCD de 16x2 el cual siginifica que tiene 16 columnas y 2 filas, lo que se hizo fue iniciar en el punto (16, 2) para que le texto aparazca en la parte superior y para la siguiente fila se uso como punto de inicio el (0, 1). Habiendo establecido nuestros puntos de inicio el texto que mandemos al programa se va a imprimir y se dezplazara a la izquierda hasta que desapareca por completo el texto y volvera a parecer desde el lado derecho.
+En este programa se utilizó la libreria *LiquidCristal*, en este ejemplo se uso un display LCD de 16x2 el cual siginifica que tiene 16 columnas y 2 filas, lo que se hizo fue iniciar en el punto (16, 2) para que le texto aparazca en la parte superior y para la siguiente fila se uso como punto de inicio el (4, 1). Habiendo establecido nuestros puntos de inicio el texto que mandemos al programa se va a imprimir y se dezplazara a la izquierda hasta que desapareca por completo el texto y volvera a parecer desde el lado derecho.
 
 ![](https://github.com/Rafa1104/Trabajo-de-Investigacion-P2/blob/master/img/display%20simu.png)
 
