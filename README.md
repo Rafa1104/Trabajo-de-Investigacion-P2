@@ -209,6 +209,25 @@ Es un motor de CC sin núcleo de tamaño compacto que se utiliza para informar a
 
 
 ## 7. MAPA DE VARIABLES
+| **VARIABLE** | **TIPO** | **DESCRIPCIÓN** |
+| :---: | :---: | :---: |
+| PIN | define | declara al pin 2 como salida del Neopixel|
+| red | int | toma un valor entero |
+| green| int  | toma un valor entero |
+| blue | int | toma un valor entero |
+| orange | int | declara al pin 5 como salida del LED |
+| yellow | int | declara al pin 4 como salida del LED |
+| green | int | declara al pin 3 como salida del LED |
+| blue | int | declara al pin 2 como salida del LED |
+| sns_IR | int | declara al pin pwm 11 como entrada del Sensor IR |
+| pos | int | toma un valor entero |
+| led | int | declara el pin 2 como salida del LED |
+| motor | int | declara el pin 3 como salida del motor de CC |
+| wiper | int | declara el pin A5 como entrada analago del potenciómetro |
+| wiperVal | int | almacena el estado del potenciómetro |
+| pwm3 | int | rpm del motor mapeado desde la lectura del potenciómetro |
+| ledBlnk | int | nivel de luz mapeado desde la lectura del potenciómetro |
+| motorV | int | declara al pin 3 como salida del motor de Vibración |
 
 
 ## 8.EXPLICACIÓN DEL CODIGO FUENTE
@@ -235,6 +254,7 @@ TinkerCAD se puede utilizar para una gran variedad de aplicaciones, incluida la 
 
 
 ## 13. CRONOGRAMA
+![](https://github.com/Rafa1104/Trabajo-de-Investigacion-P2/blob/master/img/Cronogrma.png)
 
 
 ## 14. BIBLIOGRAFIA
