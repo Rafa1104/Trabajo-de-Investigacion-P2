@@ -44,13 +44,13 @@
 |  |  |
 | Anillo de 12 Neopixeles | |
 | Control Remoto por IR | |
+| Sensor IR | |
 | Display LCD | Es una pantalla delgada y plana formada por un número de píxeles en color o monocromos colocados delante de una fuente de luz o reflectora. |
 | Micro Servomotor| |
 | Motor de CC |  |
 | Motor de Vibración |  |
 | LEDs | Un diodo emisor de luz. |
-| Pulsador | Es un operador eléctrico que, cuando se oprime, permite el paso de la corriente eléctrica y, cuando se deja de oprimir, lo interrumpe. |
-| Fotoresistencia | Es un componente electrónico cuya resistencia se modifica, (normalmente disminuye) con el aumento de intensidad de luz incidente. |
+| Resistencias | |
 | Cables | es un cable con un conector en cada punta, que se usa normalmente para interconectar entre sí los componentes en una placa de pruebas. |
 | ProtoBoard | Es una placa de pruebas en los que se pueden insertar elementos electrónicos y cables con los que se arman circuitos sin la necesidad de soldar ninguno de los componentes. |
 
