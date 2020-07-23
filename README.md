@@ -1,12 +1,12 @@
 # ACTUADORES
 
 ## 1. PLANTEAMIENTO
-Trabajar con los diferentes dispositivos que nos ofrece la plataforma Thinkercad como un motor de corriente continua, control remoto por infrarrojo, servomotor, motor de vibración, LCD y un anillo de 12 neopixeles los cuales deberán ser implementados en un programa que nos demuestre su funcionamiento mediante una simulación de los mismos.
+Trabajar con los diferentes dispositivos que nos ofrece la plataforma Tinkercad como un motor de corriente continua, control remoto por infrarrojo, servomotor, motor de vibración, LCD y un anillo de 12 neopixeles los cuales deberán ser implementados en un programa que nos demuestre su funcionamiento mediante una simulación de los mismos.
 
 
 ## 2. OBJETIVOS
 ### **Objetivo General**
-Implementar en Thinkercad un programa en Arduino (para comprender el funcionamiento de actuadores básicos)por cada uno de los sensores utilizados en la demostración del programa, en el cual lo principal es verificar la transmisión de datos desde la tarjeta antes mencionada hasta los periféricos usados en la práctica.
+Implementar en Tinkercad un programa en Arduino (para comprender el funcionamiento de actuadores básicos)por cada uno de los sensores utilizados en la demostración del programa, en el cual lo principal es verificar la transmisión de datos desde la tarjeta antes mencionada hasta los periféricos usados en la práctica.
 
 ### **Objetivos específicos**
 -	Constatar que son los motores CC, como se alimentan, tipo de torque que poseen y tipo de velocidades alcanzan. 
