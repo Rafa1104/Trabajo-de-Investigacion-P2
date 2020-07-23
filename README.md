@@ -34,8 +34,24 @@ Hay muchas otros microcontroladores y plataformas disponibles para la computaci�
 [*Tinkercard*](https://www.tinkercad.com/) es una colección gratuita en línea de herramientas de software que ayudan a las personas de todo el mundo a pensar, crear y crear. Somos la introducción ideal a Autodesk, el líder en diseño 3D, ingeniería y software de entretenimiento.
 
 ### Anillo de 12 Neopixeles
+Los tecnología NeoPixel nos permite enlazar multitud LEDs RGB y controlarlos con un solo cable de datos, ahorrándonos multitud de cables y simplificando la instalación.
+
+LEDs RGB (rojo, verde y azul) están integrados junto con un chip driver en una pequeña superficie a través de un cable. NeoPixel viene de diferentes formas y tamaño, en esta ocasión nos enfocaremos en el aro de 12 Leds.
+
+NeoPixels no se iluminan por si solos, necesitan de un microcontrolador para que estos funcionen. En este tutorial usaremos código en Arduino para empezar con NeoPixel, una vez que nos familiaricemos con el código podemos crear nuestros propios efectos y animaciones.
+
+Como nota importante NeoPixels funciona para la mayoría de microcontroladores pero se le dificulta cuando trabaja con plataformas como Raspberry Pi, pues la señal de control es muy estricta.
+
+Para controlar cada uno de LEDs tendremos que usar biblioteca específica de Adafruit.
 
 ### Control remoto por IR
+El control remoto IR (infrarrojos) o mando a distancia de infrarrojos funciona emitiendo pulsos de luz infrarroja (por debajo del visible). La señal infrarroja transmite el código correspondiente al botón del mando a distancia pulsado al dispositivo en forma de una serie de impulsos de luz infrarroja. El receptor recibe la serie de impulsos de infrarrojos y los pasa a un procesador que descodifica y activarán una determinada función del dispositivo.
+
+Este tipo de de señal tiene muy poco alcance, apenas unos metros, comparada con la señal de radiofrecuencia. Es muy «direccional», es decir, es necesario que el emisor de la señal infrarroja apunte el receptor. Si la señal es muy débil, falta de batería en el mando, podemos ver que  es  muy necesario apuntar directamente e incluso acercarse al receptor. 
+
+Los obstáculos entre el mando y el receptor incluyen mucho en la señal, no llegará a su destino. Esto seguro que has probado con el mando a distancia de la televisión, cuando alguien se pone entre el mando y la televisión no llega la señal.
+
+Podemos concluir con los mandos a distancia por infrarrojos son buenos para los casos que tengamos un solo dispositivo ya que no abre tanto la señal que emite como para alcanzar varios dispositivos. 
 
 ### Display LCD
 
