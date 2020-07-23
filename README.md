@@ -117,6 +117,7 @@ El motor en el interior de un servomotor es un motor DC común y corriente. El e
 La presencia del sistema de engranajes como el que se muestra en la figura hace que cuando movemos el eje motor se sienta una inercia muy superior a la de un motor común y corriente. Observando las imágenes que hemos presentado nos podemos dar cuenta que un servo no es un motor como tal, sino un conjunto de partes (incluyendo un motor) que forman un sistema
 
 **Funcionamiento:**
+
 Los servomotores poseen tres cables, a diferencia de los motores comunes que sólo tienen dos. Estos tres cables casi siempre tienen los mismos colores, por lo que son fácilmente reconocibles.
 
 ![](https://github.com/Rafa1104/Trabajo-de-Investigacion-P2/blob/master/img/servo%20color.png)
@@ -163,6 +164,7 @@ Como regla general, los motores generan grandes torques a baja velocidad, y gran
 
 Es un motor de CC sin núcleo de tamaño compacto que se utiliza para informar a los usuarios de recibir la señal mediante vibración, sin sonido. Los motores de vibración se utilizan ampliamente en una variedad de aplicaciones, incluidos teléfonos celulares, teléfonos, buscapersonas, etc. Las características principales del motor de vibración es que el motor de CC sin núcleo del imán es permanente, lo que significa que siempre tendrá sus propiedades magnéticas (a diferencia de un electroimán, que solo se comporta como un imán cuando una corriente eléctrica lo atraviesa); Otra característica principal es que el tamaño del motor es pequeño y, por lo tanto, ligero. Además, el ruido y el consumo de energía que produce el motor durante el uso son bajos. Basado en esas características, el rendimiento del motor es altamente confiable.
 
+
 ## 5. DIAGRAMAS
 ### Anillo de 12 Neopixeles
 ![](https://github.com/Rafa1104/Trabajo-de-Investigacion-P2/blob/master/img/Actuadores/Anillo%20de%2012%20Neopixeles.png)
@@ -185,25 +187,25 @@ Es un motor de CC sin núcleo de tamaño compacto que se utiliza para informar a
 ### Aporte
 ![](https://github.com/Rafa1104/Trabajo-de-Investigacion-P2/blob/master/img/Actuadores/IR-Decode%20Value.png)
 
+
 ## 6. LISTA DE COMPONENTES
 | **COMPONENTE** | **DESCRIPCIÓN** |
 | :---: | :---: |
 | Computadora | Puede tener cualquier Sistema Operativo |
 | Internet | Simluación de Arduino con *Tinkercad* |
 | Arduino UNO | Es una placa electrónica basada en el microcontrolador ATmega328. Cuenta con 14 entradas/salidas digitales, de las cuales 6 se pueden utilizar como salidas PWM (Modulación por ancho de pulsos) y otras 6 son entradas analógicas. Además, incluye un resonador cerámico de 16 MHz, un conector USB, un conector de alimentación, una cabecera ICSP y un botón de reseteado. |
-| Anillo de 12 Neopixeles | |
-| Control Remoto por IR | |
-| Sensor IR | |
+| Anillo de 12 Neopixeles | Es un aro conformado por 12 leds RGB (rojo, verde, azul) |
+| Control Remoto por IR | Es un mando a distancia de infrarrojos funciona emitiendo pulsos de luz infrarroja. |
+| Sensor IR | Es un instrumento electrónico que escanea señales IR en rangos de frecuencia específicos definidos por estándares y los convierte en señales eléctricas en su pin de salida. |
 | Display LCD | Es una pantalla delgada y plana formada por un número de píxeles en color o monocromos colocados delante de una fuente de luz o reflectora. |
-| Micro Servomotor| |
-| Motor de CC |  |
+| Micro Servomotor| Es un tipo especial de motor que permite controlar la posición del eje en un momento dado. Esta diseñado para moverse determinada cantidad de grados y luego mantenerse fijo en una posición. |
+| Motor de CC | Es una máquina que convierte la energía eléctrica en mecánica, provocando un movimiento rotatorio. |
 | Potenciómetro | Es un resistor eléctrico con un valor de resistencia variable y generalmente ajustable manualmente. |
-| Motor de Vibración |  |
+| Motor de Vibración | Es un motor de CC sin núcleo de tamaño compacto que se utiliza para informar a los usuarios de recibir la señal mediante vibración. |
 | LEDs | Un diodo emisor de luz. |
 | Resistencias | Es un dispositivo cuya función es la de oponerse al paso de corriente eléctrica en un circuito. |
 | Cables | es un cable con un conector en cada punta, que se usa normalmente para interconectar entre sí los componentes en una placa de pruebas. |
 | ProtoBoard | Es una placa de pruebas en los que se pueden insertar elementos electrónicos y cables con los que se arman circuitos sin la necesidad de soldar ninguno de los componentes. |
-
 
 
 ## 7. MAPA DE VARIABLES
